@@ -255,7 +255,7 @@ aside ul li {
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
   html {
-    margin: 0 5vw 0 5vw;
+    margin: 0;
   }
 
   body {
@@ -269,11 +269,11 @@ aside ul li {
     flex-wrap: wrap-reverse;
   }
   nav h1 {
-    font-size: 8vw;
+    font-size: 2.1rem;
     padding: 10px 0 10px 0;
   }
   nav h2 {
-    font-size: 3vw;
+    font-size: 1.1rem;
     padding: 0 0 20px 0;
   }
   nav ul {
@@ -309,10 +309,10 @@ aside ul li {
     max-width: 100%;
   }
   .container_1 h1 {
-    font-size: 7vw;
+    font-size: 3rem;
   }
   .container_1 p {
-    font-size: 3.5vw;
+    font-size: 1.2rem;
   }
   .container h2 {
     font-size: 8vw;
