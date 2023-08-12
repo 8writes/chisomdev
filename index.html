@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chisom Emmanuel | Frontend Dev.</title>
+        <meta name="description" content="Chisom Emmanuel Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Manjari:wght@700&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=K2D&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <div class="intro">
+                    <h1 onclick="toggleTab('tab1')">Chisom Emmanuel</h1>
+                    <h2>Frontend Developer</h2>
+                </div>
+                <div class="socials">
+                    <ul>
+                        <li><img src="assets/imgs/mail.png" alt="Mail"></li>
+                        <li><img src="assets/imgs/github.png" alt="Github"></li>
+                        <li><img src="assets/imgs/twitter.png" alt="Twitter"></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+
+                <div class="tabcontent" id="tab1" style="display: block;">
+                    <div class="container_1">
+                        <h1>Hello ^_^</h1>
+                        <p>
+                            My name is Chisom, I'm a Front-end Developer based in Lagos. I write React.Js, Next.Js, CSS,
+                            Framer
+                            Motion and various
+                            frameworks / tooling.
+                        </p>
+                        <p>I practice Semantic html and better code structuring for readability.</p>
+                    </div>
+                </div>
+
+                <div class="tabcontent" id="tab2">
+                    <div class="container">
+                        <h3>Projects -- </h3>
+                        <div class="content">
+                            <h2>Bingpay Web App</h2>
+                            <h2>Quote Generator </h2>
+                            <h2>To-Do App</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <ul>
+                    <li class="tab-link" onclick="toggleTab('tab1')">Info</li>
+                    <li class="tab-link" onclick="toggleTab('tab2')">Projects</li>
+                    <li>résumé</li>
+                </ul>
+            </aside>
+        </main>
+
+        <footer>
+        </footer>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <script src="assets/js/script.js" async defer></script>
+    </body>
+
+</html>
