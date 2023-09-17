@@ -1,613 +1,352 @@
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-a{
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-thumb {
+  border: solid 2px darkslategrey;
+}
+a {
   text-decoration: none;
   color: white;
-}
-nav h1 {
-  font-family: "Comfortaa", cursive;
-  color: darkslategrey;
-  line-height: 1px;
-  cursor: pointer;
-}
-nav h2 {
-  font-family: "K2D", sans-serif;
-  color: darkslategray;
-  line-height: 1px;
-}
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-}
-nav ul li {
-  cursor: pointer;
-}
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 .tabcontent {
   display: none;
 }
-.container {
-  border-radius: 10px;
-}
-.content {
-  overflow: auto;
-  position: relative;
-}
-.content::-webkit-scrollbar {
-  display: none;
-}
-.container_1 h1 {
-  font-family: "Manjari", sans-serif;
-  color: darkslategray;
-}
-.container_1 p {
-  font-family: "Manjari", sans-serif;
-  color: darkslategray;
-}
-.container h2 {
-  font-family: "Comfortaa", cursive;
-  color: darkslategray;
-}
-.container h3 {
-  font-family: "K2D", sans-serif;
-  color: darkslategray;
-}
-aside ul {
-  list-style: none;
-  padding: 0;
-}
-aside ul li {
-  cursor: pointer;
-  color: darkslategray;
-  font-family: "K2D", sans-serif;
-}
 
-/* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
-@media (min-width: 100px) {
+/* Small screens (up to 767px) */
+@media (max-width: 557px) {
   html {
-    margin: 0;
-  }
-
-  body {
-    margin: auto;
-    padding: 2vh 5vw 2vh 5vw;
-  }
-  header {
-    padding: 2px;
+    display: block;
   }
   nav {
-    flex-wrap: wrap-reverse;
-  }
-  nav h1 {
-    font-size: 1.7rem;
-    padding: 10px 0 10px 0;
-  }
-  nav h2 {
-    font-size: 1rem;
-    padding: 0 0 20px 0;
-  }
-  nav ul {
-    gap: 20px;
-    padding: 0;
-  }
-  .intro {
-    width: 100%;
-  }
-  .socials ul li img {
-    width: 7vw;
-  }
-  .socials {
-    margin: 0;
-    width: 100%;
     display: flex;
+    flex-wrap: wrap-reverse;
     justify-content: center;
   }
-  main {
-    padding: 4vh 5px 5px 5px;
+  .intro {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     width: 100%;
-    margin: auto;
   }
-  .container {
-    padding: 10px 10px 0 10px;
-    max-width: 100%;
+  .intro h1 {
+    font-family: "Comfortaa", cursive;
+    font-size: 2em;
+    color: darkslategrey;
+    cursor: pointer;
   }
+  .intro h2 {
+    font-family: "K2D", sans-serif;
+    font-size: 1em;
+    color: darkslategrey;
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .socials img {
+    width: 30px;
+  }
+  .socials ul {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    gap: 20px;
+  }
+  .socials ul li {
+    cursor: pointer;
+  }
+  /*-------------------------------HEADER END---------------------------------*/
   .content {
-    width: 100%;
-    height: 45vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10px 10px;
+    margin: 0 0 70px;
   }
-  .container_1 {
-    max-width: 100%;
+  .info {
+    margin: 0 10px 0 10px;
   }
-  .container_1 h1 {
-    font-size: 2rem;
+  .info h1 {
+    font-family: "Manjari", sans-serif;
+    color: darkslategrey;
+    font-size: 2em;
   }
-  .container_1 p {
-    font-size: 1rem;
+  .info p {
+    font-family: "Manjari", sans-serif;
+    color: darkslategrey;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 2em;
   }
-  .container h2 {
-    font-size: 3rem;
-  }
-  .container h3 {
-    font-size: 1rem;
-  }
-  section {
-    width: 100%;
-  }
-  aside {
+  .menu {
     background-color: rgba(47, 79, 79, 0.847);
     border-radius: 20px 0 20px 0;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    right: 10%;
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
   }
-  aside ul {
+  .menu ul {
     display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    justify-content: center;
+    font-family: "K2D", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
   }
-  aside ul li {
-    margin: auto;
-    padding: 5px;
-    font-size: 5vw;
-    gap: 20;
-    color: white;
+  .projects {
+    display: grid;
   }
+  .projects h3 {
+    font-family: "K2D", sans-serif;
+    font-size: 1em;
+    color: darkslategrey;
+  }
+  .projects__content a h2 {
+    font-size: 3.1em;
+    color: darkslategrey;
+    font-family: "Comfortaa", cursive;
+  }
+  .projects__content {
+    overflow: auto;
+    width: 100%;
+    max-height: 50dvh;
+  }
+  .projects__content::-webkit-scrollbar {
+    width: 12px;
+  }
+  .projects__content::-webkit-scrollbar-thumb {
+    border: solid 2px darkslategrey;
+  }
+  /* CSS styles for small screens go here */
 }
 
-/* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
-@media (min-width: 374px) {
+/* Medium screens (768px to 991px) */
+@media (min-width: 557px) and (max-width: 991px) {
   html {
-    margin: 0;
-  }
-
-  body {
-    margin: auto;
-    padding: 2vh 5vw 2vh 5vw;
-  }
-  header {
-    padding: 2px;
+    display: block;
   }
   nav {
-    flex-wrap: wrap-reverse;
-  }
-  nav h1 {
-    font-size: 2rem;
-    padding: 10px 0 10px 0;
-  }
-  nav h2 {
-    font-size: 1rem;
-    padding: 0 0 20px 0;
-  }
-  nav ul {
-    gap: 20px;
-    padding: 0;
-  }
-  .intro {
-    width: 100%;
-  }
-  .socials ul li img {
-    width: 7vw;
-  }
-  .socials {
-    margin: 0;
-    width: 100%;
     display: flex;
+    flex-wrap: wrap-reverse;
     justify-content: center;
   }
-  main {
-    padding: 4vh 5px 5px 5px;
+  .intro {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     width: 100%;
-    margin: auto;
   }
-  .container {
-    padding: 10px 10px 0 10px;
-    max-width: 100%;
+  .intro h1 {
+    font-family: "Comfortaa", cursive;
+    font-size: 2.5em;
+    color: darkslategrey;
+    cursor: pointer;
   }
+  .intro h2 {
+    font-family: "K2D", sans-serif;
+    font-size: 1.4em;
+    color: darkslategrey;
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .socials img {
+    width: 40px;
+  }
+  .socials ul {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    gap: 20px;
+  }
+  .socials ul li {
+    cursor: pointer;
+  }
+  /*-------------------------------HEADER END---------------------------------*/
   .content {
-    width: 100%;
-    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10px 10px;
+    margin: 0 0 70px;
   }
-  .container_1 {
-    max-width: 100%;
+  .info {
+    margin: 0 50px 0 50px;
   }
-  .container_1 h1 {
-    font-size: 2.5rem;
+  .info h1 {
+    font-family: "Manjari", sans-serif;
+    color: darkslategrey;
+    font-size: 2.5em;
   }
-  .container_1 p {
-    font-size: 1.1rem;
+  .info p {
+    font-family: "Manjari", sans-serif;
+    color: darkslategrey;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 2em;
   }
-  .container h2 {
-    font-size: 3.3rem;
-  }
-  .container h3 {
-    font-size: 1rem;
-  }
-  section {
-    width: 100%;
-  }
-  aside {
+  .menu {
     background-color: rgba(47, 79, 79, 0.847);
     border-radius: 20px 0 20px 0;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    right: 10%;
+    position: fixed;
+    bottom: 10px;
+    left: 50px;
+    right: 50px;
   }
-  aside ul {
+  .menu ul {
     display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    justify-content: center;
+    font-family: "K2D", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
   }
-  aside ul li {
-    margin: auto;
-    padding: 5px;
-    font-size: 5vw;
-    gap: 20;
-    color: white;
+  .projects {
+    display: grid;
+    min-width: 80vw;
   }
+  .projects h3 {
+    font-family: "K2D", sans-serif;
+    font-size: 1em;
+    color: darkslategrey;
+  }
+  .projects__content a h2 {
+    font-size: 4em;
+    color: darkslategrey;
+    font-family: "Comfortaa", cursive;
+  }
+  .projects__content a h2:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+  }
+  .projects__content {
+    overflow: auto;
+    width: 100%;
+    max-height: 50dvh;
+    margin: 10px 0 50px 0;
+  }
+  .projects__content::-webkit-scrollbar {
+    width: 12px;
+  }
+  .projects__content::-webkit-scrollbar-thumb {
+    border: solid 2px darkslategrey;
+  }
+  /* CSS styles for medium screens go here */
 }
 
-/* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
-@media (min-width: 425px) {
+/* Large screens (992px and above) */
+@media (min-width: 992px) {
   html {
-    margin: 0;
-  }
-
-  body {
-    margin: auto;
-    padding: 2vh 5vw 2vh 5vw;
-  }
-  header {
-    padding: 2px;
+    display: block;
+    margin: 0 14vw 0 14vw;
   }
   nav {
-    flex-wrap: wrap-reverse;
-  }
-  nav h1 {
-    font-size: 2.1rem;
-    padding: 10px 0 10px 0;
-  }
-  nav h2 {
-    font-size: 1.1rem;
-    padding: 0 0 20px 0;
-  }
-  nav ul {
-    gap: 20px;
-    padding: 0;
-  }
-  .intro {
-    width: 100%;
-  }
-  .socials ul li img {
-    width: 7vw;
-  }
-  .socials {
-    margin: 0;
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 5vh 0 10vh 0;
+    gap: 50px;
   }
-  main {
-    padding: 4vh 5px 5px 5px;
-    width: 100%;
-    margin: auto;
+  .intro h1 {
+    font-family: "Comfortaa", cursive;
+    font-size: 3.5em;
+    color: darkslategrey;
+    cursor: pointer;
   }
-  .container {
-    padding: 10px 10px 0 10px;
-    max-width: 100%;
+  .intro h2 {
+    font-family: "K2D", sans-serif;
+    font-size: 1.2em;
+    color: darkslategrey;
   }
-  .content {
-    width: 100%;
-    height: 50vh;
+  .socials {
+    margin: auto 0 auto 0;
   }
-  .container_1 {
-    max-width: 100%;
+  .socials img {
+    width: 40px;
   }
-  .container_1 h1 {
-    font-size: 3rem;
-  }
-  .container_1 p {
-    font-size: 1.2rem;
-  }
-  .container h2 {
-    font-size: 3.5rem;
-  }
-  .container h3 {
-    font-size: 1rem;
-  }
-  section {
-    width: 100%;
-  }
-  aside {
-    background-color: rgba(47, 79, 79, 0.847);
-    border-radius: 20px 0 20px 0;
-    margin: 0;
+  .socials ul {
+    list-style: none;
+    display: inline-flex;
     padding: 0;
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    right: 10%;
+    gap: 20px;
   }
-  aside ul {
+  .socials ul li {
+    cursor: pointer;
+  }
+  .socials ul li:hover {
+    transform: rotate(10deg);
+  }
+  /*-------------------------------HEADER END---------------------------------*/
+  .content {
     display: flex;
-  }
-  aside ul li {
-    margin: auto;
-    padding: 5px;
-    font-size: 5vw;
-    gap: 20;
-    color: white;
-  }
-}
-
-/* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
-@media (min-width: 768px) {
-  html {
-    margin: 0 8vw 0 8vw;
-  }
-
-  body {
-    margin: auto;
-    padding: 5vh 5vw 5vh 5vw;
-  }
-  header {
-    padding: 5px;
-  }
-  .intro {
-    width: fit-content;
-  }
-  nav h1 {
-    font-size: 2.5rem;
-    padding: 20px 0 20px 0;
-  }
-  nav h2 {
-    font-size: 1rem;
-    padding: 0 0 20px 0;
-  }
-  nav ul {
-    gap: 20px;
-    padding: 20px 0 20px 0;
-  }
-  .socials ul li img {
-    width: 3vw;
-  }
-  .socials {
-    margin: 0;
-    width: fit-content;
-  }
-  main {
-    padding: 4vh 5px 5px 5px;
-    width: 100%;
-    margin: auto;
-  }
-  .container {
-    padding: 10px 10px 0 10px;
-    max-width: fit-content;
-  }
-  .content {
-    width: 45vw;
-    height: 50vh;
-  }
-  .container_1 {
-    max-width: 50vw;
-  }
-  .container_1 h1 {
-    font-size: 2.2rem;
-  }
-  .container_1 p {
-    font-size: 1.1rem;
-  }
-  .container h2 {
-    font-size: 3.3rem;
-  }
-  .container h3 {
-    font-size: 1rem;
-  }
-  section {
-    width: fit-content;
-  }
-  aside {
-    background-color: transparent;
-    width: fit-content;
-    margin: 20px;
-    padding: 20px;
-    position: relative;
-    left: 0;
-    right: 0;
-  }
-  aside ul {
-    display: contents;
-  }
-  aside ul li {
-    margin: auto;
-    padding: 5px;
-    font-size: 1.1rem;
-    gap: 20;
-    color: darkslategray;
-  }
-}
-
-/* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
-@media (min-width: 1024px) {
-  html {
-    margin: 0 8vw 0 8vw;
-  }
-
-  body {
-    margin: auto;
-    padding: 5vh 5vw 5vh 5vw;
-  }
-  header {
-    padding: 5px;
-  }
-  .intro {
-    width: fit-content;
-  }
-  nav h1 {
-    font-size: 4vw;
-    padding: 20px 0 20px 0;
-  }
-  nav h2 {
-    font-size: 1.2vw;
-    padding: 0 0 20px 0;
-  }
-  nav ul {
-    gap: 20px;
-    padding: 20px 0 20px 0;
-  }
-  .socials ul li img {
-    width: 3vw;
-  }
-  .socials {
-    margin: 5px;
-    width: fit-content;
-  }
-  main {
-    padding: 4vh 5px 5px 5px;
-    width: 100%;
-    margin: auto;
-  }
-  .container {
-    padding: 10px 10px 0 10px;
-    max-width: fit-content;
-  }
-  .content {
-    width: 45vw;
-    height: 45vh;
-  }
-  .container_1 {
-    max-width: 50vw;
-  }
-  .container_1 h1 {
-    font-size: 3.5vw;
-  }
-  .container_1 p {
-    font-size: 1.2vw;
-  }
-  .container h2 {
-    font-size: 4vw;
-  }
-  .container h3 {
-    font-size: 1vw;
-  }
-  section {
-    width: fit-content;
-  }
-  aside {
-    background-color: transparent;
-    width: fit-content;
-    margin: 20px;
-    padding: 20px;
-    position: relative;
-    left: 0;
-    right: 0;
-  }
-  aside ul {
-    display: contents;
-  }
-  aside ul li {
-    margin: auto;
-    padding: 5px;
-    font-size: 2vw;
-    gap: 20;
-    color: darkslategray;
-  }
-}
-
-/* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
-@media (min-width: 1440px) {
-  html {
-    margin: 0 10vw 0 10vw;
-  }
-
-  body {
-    margin: auto;
-    padding: 5vh 5vw 5vh 5vw;
-  }
-  header {
-    padding: 5px;
-  }
-  .intro {
-    width: fit-content;
-  }
-  nav h1 {
-    font-size: 3.5vw;
-    padding: 20px 0 20px 0;
-  }
-  nav h2 {
-    font-size: 1vw;
-    padding: 0 0 20px 0;
-  }
-  nav ul {
-    gap: 20px;
-    padding: 20px 0 20px 0;
-  }
-  .socials ul li img {
-    width: 2.5vw;
-  }
-  .socials {
-    margin: 5px;
-    width: fit-content;
-  }
-  main {
-    padding: 10vh 5px 5px 5px;
-    width: 100%;
-    margin: auto;
-  }
-  .container {
-    padding: 10px 10px 0 10px;
-    max-width: fit-content;
-  }
-  .content {
-    width: 45vw;
-    height: 45vh;
-  }
-  .container_1 {
-    max-width: 50vw;
-  }
-  .container_1 h1 {
-    font-size: 3.5vw;
-  }
-  .container_1 p {
-    font-size: 1.2vw;
-  }
-  .container h2 {
-    font-size: 4vw;
-  }
-  .container h3 {
-    font-size: 1vw;
-  }
-  section {
-    width: fit-content;
-  }
-  aside {
-    background-color: transparent;
-    width: fit-content;
-    margin: 20px;
-    padding: 20px;
-    position: relative;
-    left: 0;
-    right: 0;
-  }
-  aside ul {
-    display: contents;
-  }
-  aside ul li {
-    margin: auto;
-    padding: 5px;
-    font-size: 2vw;
-    gap: 20;
-    color: darkslategray;
-  }
+    justify-content: space-between;
+  }
+  .info h1 {
+    font-family: "Manjari", sans-serif;
+    color: darkslategrey;
+    font-size: 2.7em;
+  }
+  .info p {
+    font-family: "Manjari", sans-serif;
+    color: darkslategrey;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.1em;
+    max-width: 95%;
+  }
+  .menu ul {
+    list-style: none;
+    font-family: "K2D", sans-serif;
+    color: darkslategrey;
+    font-size: 1.8em;
+  }
+  .menu ul li {
+    margin: 5px 5px;
+    cursor: pointer;
+  }
+  .menu ul li:hover {
+    text-decoration: underline;
+  }
+  .projects {
+    display: grid;
+    min-width: 50vw;
+  }
+  .projects h3 {
+    font-family: "K2D", sans-serif;
+    font-size: 1em;
+    color: darkslategrey;
+  }
+  .projects__content a h2 {
+    font-size: 4em;
+    color: darkslategrey;
+    font-family: "Comfortaa", cursive;
+  }
+  .projects__content a h2:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+  }
+  .projects__content {
+    overflow: auto;
+    max-height: 50dvh;
+    margin: 5px 0 50px 0;
+  }
+  .projects__content::-webkit-scrollbar {
+    width: 12px;
+  }
+  .projects__content::-webkit-scrollbar-thumb {
+    border: solid 2px darkslategrey;
+  }
+  /* CSS styles for medium screens go here */
 }

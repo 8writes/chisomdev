@@ -17,6 +17,7 @@
             rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=K2D&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/main.css">
+
     </head>
 
     <body>
@@ -24,50 +25,76 @@
         <header>
             <nav>
                 <div class="intro">
-                    <h1 onclick="toggleTab('tab1')">Chisom Emmanuel</h1>
-                    <h2>Frontend Developer.</h2>
+                    <div>
+                        <h1 onclick="toggleTab('tab1')">Chisom Emmanuel</h1>
+                        <h2>Frontend Developer.</h2>
+                    </div>
                 </div>
                 <div class="socials">
                     <ul>
-                        <li><a href="mailto:mailemmanuel00@gmail.com"><img src="assets/imgs/mail.png" alt="Mail"></a></li>
-                        <li><a href="https://github.com/8writes" target="_blank"><img src="assets/imgs/github.png" alt="Github"></a></li>
-                        <li><a href="https://twitter.com/8mmnuel" target="_blank"><img src="assets/imgs/twitter.png" alt="Twitter"></a></li>
+                        <li><a href="mailto:mailemmanuel00@gmail.com"><img src="assets/imgs/mail.png" alt="Mail"></a>
+                        </li>
+                        <li><a href="https://github.com/8writes" target="_blank"><img src="assets/imgs/github.png"
+                                    alt="Github"></a></li>
+                        <li><a href="https://twitter.com/8mmnuel" target="_blank"><img src="assets/imgs/twitter.png"
+                                    alt="Twitter"></a></li>
                     </ul>
                 </div>
             </nav>
         </header>
 
         <main>
-            <section>
-
-                <div class="tabcontent" id="tab1" style="display: block;">
-                    <div class="container_1">
-                        <h1>Hello ^_^</h1>
-                        <p>My name is Chisom, I'm a Frontend Developer based in Lagos, Nigeria.</p>
-                        <p>I offer great value in whatever I do, toiling day and night to perfect my craft.</p>
-                        <p>I write Vue and Typescript. I build around React, Node and Python, making use of various
-                            frameworks & Libraries.</p>
-                    </div>
-                </div>
-
-                <div class="tabcontent" id="tab2">
-                    <div class="container">
-                        <h3>Projects -- </h3>
-                        <div class="content">
-                            <h2>Bingpay Web App</h2>
-                            <h2>Quote Generator </h2>
-                            <h2>To-Do App</h2>
+            <div class="content">
+                <section class="">
+                    <div class="tabcontent" id="tab1" style="display: block;">
+                        <div class="info">
+                            <h1>Hello ^_^</h1>
+                            <p>My name is Chisom, I'm a Frontend (MERN STACK) Developer based in Lagos, Nigeria.</p>
+                            <p>I try to offer great value in whatever I do, toiling day and night to perfect my craft.
+                            </p>
+                            <p>I build mainly around React, Node, MongoDB and Rest APIs, making use of various
+                                frameworks like Next.Js and Express.Js.</p>
+                            <p>I like to use Pure Css & Css Modules but I'm also familiar with other technologies like
+                                Tailwind, MaterialUI, Github etc. </p>
+                            <p>Feel free to check out my selected <span
+                                    style="cursor: pointer; text-decoration: underline;"
+                                    onclick="toggleTab('tab2')">projects</span>. <span style="color: red;">Currently open to Frontend internship role</span>.</p> 
                         </div>
                     </div>
-                </div>
-            </section>
-            <aside>
-                <ul>
-                    <li class="tab-link" onclick="toggleTab('tab1')">Info</li>
-                    <li class="tab-link" onclick="toggleTab('tab2')">Projects</li>
-                    <li>résumé</li>
-                </ul>
-            </aside>
+
+                    <div class="tabcontent" id="tab2">
+                        <div class="projects">
+                            <h3>Projects -- (scroll)</h3>
+                            <div class="projects__content">
+                                <div> <a href="https://bingpay.brimble.app/" target="_blank">
+                                        <h2>Bingpay Web App</h2>
+                                    </a>
+                                    <span style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">NEXTJS / FRAMER MOTION / CSS MODULES</span>
+                                </div>
+                                <div> <a href="https://ztats.brimble.app/" target="_blank">
+                                        <h2>Ztats Web App </h2>
+                                        <span style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">NEXTJS / RESTAPI</span>
+                                    </a>
+                                </div>
+                                <div> <a href="https://appztats.brimble.app/signup" target="_blank">
+                                        <h2>User Web App</h2>
+                                        <span
+                                            style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">NODEJS / NEXTJS / EXPRESSJS / MONGODB / MaterialUI</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <aside class="menu">
+                    <ul>
+                        <li class="tab-link" onclick="toggleTab('tab1')">Info</li>
+                        <li class="tab-link" onclick="toggleTab('tab2')">Projects</li>
+                        <li style="cursor: not-allowed;">résumé</li>
+                    </ul>
+                </aside>
+            </div>
         </main>
 
         <footer>
