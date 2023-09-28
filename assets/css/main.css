@@ -9,7 +9,7 @@ html::-webkit-scrollbar-thumb {
 }
 a {
   text-decoration: none;
-  color: white;
+   color: darkslategrey;
 }
 .tabcontent {
   display: none;
