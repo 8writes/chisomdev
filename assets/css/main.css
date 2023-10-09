@@ -9,7 +9,7 @@ html::-webkit-scrollbar-thumb {
 }
 a {
   text-decoration: none;
-   color: darkslategrey;
+  color: darkslategrey;
 }
 .tabcontent {
   display: none;
@@ -100,6 +100,9 @@ a {
     font-family: "K2D", sans-serif;
     color: rgb(255, 255, 255);
     font-size: 1.3em;
+  }
+  .menu ul a {
+    color: rgb(255, 255, 255);
   }
   .projects {
     display: grid;
