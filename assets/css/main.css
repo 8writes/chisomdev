@@ -1,3 +1,5 @@
+/** @format */
+
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -27,18 +29,20 @@ a {
   }
   .intro {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
     text-align: center;
     width: 100%;
   }
   .intro h1 {
-    font-family: "Comfortaa", cursive;
-    font-size: 2em;
+    font-family: 'Comfortaa', cursive;
+    font-size: 8vw;
     color: darkslategrey;
     cursor: pointer;
   }
   .intro h2 {
-    font-family: "K2D", sans-serif;
+    font-family: 'K2D', sans-serif;
     font-size: 1em;
     color: darkslategrey;
   }
@@ -72,12 +76,12 @@ a {
     margin: 0 10px 0 10px;
   }
   .info h1 {
-    font-family: "Manjari", sans-serif;
-    color: darkslategrey;
+    font-family: 'Manjari', sans-serif;
+    color: green;
     font-size: 2em;
   }
   .info p {
-    font-family: "Manjari", sans-serif;
+    font-family: 'Manjari', sans-serif;
     color: darkslategrey;
     font-size: 1em;
     font-weight: 600;
@@ -97,7 +101,7 @@ a {
     gap: 20px;
     padding: 0;
     justify-content: center;
-    font-family: "K2D", sans-serif;
+    font-family: 'K2D', sans-serif;
     color: rgb(255, 255, 255);
     font-size: 1.3em;
   }
@@ -108,14 +112,14 @@ a {
     display: grid;
   }
   .projects h3 {
-    font-family: "K2D", sans-serif;
+    font-family: 'K2D', sans-serif;
     font-size: 1em;
     color: darkslategrey;
   }
   .projects__content a h2 {
     font-size: 3.1em;
     color: darkslategrey;
-    font-family: "Comfortaa", cursive;
+    font-family: 'Comfortaa', cursive;
   }
   .projects__content {
     overflow: auto;
@@ -143,18 +147,19 @@ a {
   }
   .intro {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     width: 100%;
   }
   .intro h1 {
-    font-family: "Comfortaa", cursive;
+    font-family: 'Comfortaa', cursive;
     font-size: 2.5em;
     color: darkslategrey;
     cursor: pointer;
   }
   .intro h2 {
-    font-family: "K2D", sans-serif;
+    font-family: 'K2D', sans-serif;
     font-size: 1.4em;
     color: darkslategrey;
   }
@@ -188,12 +193,12 @@ a {
     margin: 0 50px 0 50px;
   }
   .info h1 {
-    font-family: "Manjari", sans-serif;
-    color: darkslategrey;
+    font-family: 'Manjari', sans-serif;
+    color: green;
     font-size: 2.5em;
   }
   .info p {
-    font-family: "Manjari", sans-serif;
+    font-family: 'Manjari', sans-serif;
     color: darkslategrey;
     font-size: 1em;
     font-weight: 600;
@@ -213,7 +218,7 @@ a {
     gap: 20px;
     padding: 0;
     justify-content: center;
-    font-family: "K2D", sans-serif;
+    font-family: 'K2D', sans-serif;
     color: rgb(255, 255, 255);
     font-size: 1.4em;
   }
@@ -222,14 +227,14 @@ a {
     min-width: 80vw;
   }
   .projects h3 {
-    font-family: "K2D", sans-serif;
+    font-family: 'K2D', sans-serif;
     font-size: 1em;
     color: darkslategrey;
   }
   .projects__content a h2 {
     font-size: 4em;
     color: darkslategrey;
-    font-family: "Comfortaa", cursive;
+    font-family: 'Comfortaa', cursive;
   }
   .projects__content a h2:hover {
     text-decoration: line-through;
@@ -263,13 +268,13 @@ a {
     gap: 50px;
   }
   .intro h1 {
-    font-family: "Comfortaa", cursive;
+    font-family: 'Comfortaa', cursive;
     font-size: 3.5em;
     color: darkslategrey;
     cursor: pointer;
   }
   .intro h2 {
-    font-family: "K2D", sans-serif;
+    font-family: 'K2D', sans-serif;
     font-size: 1.2em;
     color: darkslategrey;
   }
@@ -297,12 +302,12 @@ a {
     justify-content: space-between;
   }
   .info h1 {
-    font-family: "Manjari", sans-serif;
-    color: darkslategrey;
+    font-family: 'Manjari', sans-serif;
+    color: green;
     font-size: 2.7em;
   }
   .info p {
-    font-family: "Manjari", sans-serif;
+    font-family: 'Manjari', sans-serif;
     color: darkslategrey;
     font-size: 1.2em;
     font-weight: 600;
@@ -311,7 +316,7 @@ a {
   }
   .menu ul {
     list-style: none;
-    font-family: "K2D", sans-serif;
+    font-family: 'K2D', sans-serif;
     color: darkslategrey;
     font-size: 1.8em;
   }
@@ -327,14 +332,14 @@ a {
     min-width: 50vw;
   }
   .projects h3 {
-    font-family: "K2D", sans-serif;
+    font-family: 'K2D', sans-serif;
     font-size: 1em;
     color: darkslategrey;
   }
   .projects__content a h2 {
     font-size: 4em;
     color: darkslategrey;
-    font-family: "Comfortaa", cursive;
+    font-family: 'Comfortaa', cursive;
   }
   .projects__content a h2:hover {
     text-decoration: line-through;
