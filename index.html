@@ -36,6 +36,10 @@
                                     alt="Github"></a></li>
                         <li><a href="https://twitter.com/8mmnuel" target="_blank"><img src="assets/imgs/twitter.png"
                                     alt="Twitter"></a></li>
+                        <label class="switch">
+                            <input type="checkbox" id="toggleSwitch">
+                            <span class="slider"></span>
+                        </label>
                     </ul>
                 </div>
             </nav>
@@ -47,20 +51,24 @@
                     <div class="tabcontent" id="tab1" style="display: block;">
                         <div class="info">
                             <h1>Hello ^_^</h1>
-                            <p>My name is Chisom, I'm a Frontend Dev. I studied MMS Software Engineering at <a
-                                    style="cursor: pointer; color: blue; text-decoration: underline;"
-                                    href="https://niitfortesoft.com/" target="_blank">NIIT</a>.
+                            <p>My name is Chisom, I'm a Frontend Developer. I studied MMS Software Engineering at <span>
+                                    <a class="infolink" style="cursor: pointer; text-decoration: underline;"
+                                        href="https://niitfortesoft.com/" target="_blank">NIIT</a>.
+                                </span>
                             </p>
 
-                            <p>I build mainly around Javascript, with over 3 years of experience
+                            <p>I build mainly around Javascript, with over 4 years of personal development as a
+                                frontend developer and
+                                honing my skills
                                 using
                                 libraries like React.js, Node.js and frameworks such as Next.js, Express.js,
-                                Tailwind Css, both on the frontend and backend of things.
+                                Tailwind Css, while working with REST APIs and Databases.
                             </p>
-                            <p>With a good understanding on REST API and Databases.</p>
+                            <p>Beyond my technical skills, I focus on writing clean, well-structured code, communication and team work. Focusing on users
+                                accessibility, useability and responsive layouts across multiple devices.
+                            </p>
 
-                            <p>This is my most recent <span style="cursor: pointer; color: green; text-decoration: underline;
-                                    "><a href="https://onpointdynamicssynergy.com/" target="_blank">project</a></span>.
+                            <p>This is my most recent <a class="infolink" style="cursor: pointer; text-decoration: underline;" href="https://onpointdynamicssynergy.com/" target="_blank">project</a> and feel free  to reach out to <a class="infolink" style="cursor: pointer; text-decoration: underline;" href="https://twitter.com/8mmnuel" target="_blank">me</a>.
                             </p>
                         </div>
                     </div>
@@ -69,36 +77,14 @@
                         <div class="projects">
                             <h3>Projects -- (scroll)</h3>
                             <div class="projects__content">
-                                <div> <a href="https://onpointdynamicssynergy.com/" target="_blank">
+                                <div> <a class="infolink" href="https://onpointdynamicssynergy.com/" target="_blank">
                                         <h2>ONPOINT DYNAMICS SYNERGY</h2>
                                         <span
                                             style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">
                                             / NEXTJS / TAILWINDCSS </span>
                                     </a>
                                 </div>
-                                <div> <a href="https://tunnelvsn.wtf/" target="_blank">
-                                        <h2>TUNNELVSN STORE</h2>
-                                        <span
-                                            style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">
-                                            / SHOPIFY </span>
-                                    </a>
-                                </div>
-                                <div> <a href="https://bingpay.vercel.app/" target="_blank">
-                                        <h2>BINGPAY</h2>
-                                    </a>
-                                    <span
-                                        style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">NEXTJS
-                                        / FRAMER MOTION / CSS MODULES </span>
-                                </div>
-                                 <div> <a href="https://realtinic-one.vercel.app" target="_blank">
-                                        <h2>REALTINIC</h2>
-                                        <span
-                                            style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">
-                                            / NEXTJS /
-                                            NEXTUI / TAILWINDCSS </span>
-                                    </a>
-                                </div>
-                                <div> <a href="https://app.craaft.com.ng/register" target="_blank">
+                                <div> <a class="infolink" href="https://app.craaft.com.ng/register" target="_blank">
                                         <h2>CMS PLATFORM WITH STORE</h2>
                                         <p>Email: mailemmanuel00@gmail.com <br> Pass: password@</p>
                                         <p>Or you can create your own account :)</p>
@@ -108,7 +94,7 @@
                                             / TAILWINDCSS / EXPRESS JS </span>
                                     </a>
                                 </div>
-                                <div> <a href="https://startease-cli.vercel.app/" target="_blank">
+                                <div> <a class="infolink" href="https://startease-cli.vercel.app/" target="_blank">
                                         <h2>STARTEASE CLI</h2>
                                         <span
                                             style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">
@@ -116,9 +102,18 @@
                                             NEXTUI / TAILWINDCSS </span>
                                     </a>
                                 </div>
-                                <div> <a href="https://formlinx.vercel.app/" target="_blank">
+                                <div> <a class="infolink" href="https://bingpay.vercel.app/" target="_blank">
+                                        <h2>BINGPAY</h2>
+                                    </a>
+                                    <span
+                                        style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">NEXTJS
+                                        / FRAMER MOTION / CSS MODULES </span>
+                                </div>
+
+
+                                <div> <a class="infolink" href="https://formlinx.vercel.app/" target="_blank">
                                         <h2>FORMLINX</h2>
-                                        <span
+                                        <span 
                                             style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">
                                             / NEXTJS /
                                             MATERIALUI / TAILWINDCSS </span>
@@ -133,7 +128,7 @@
                     <ul>
                         <li class="tab-link" onclick="toggleTab('tab1')">About</li>
                         <li class="tab-link" onclick="toggleTab('tab2')">Projects</li>
-                        <li><a href="assets/pdf/myResume.pdf" target="_blank">Résumé</a></li>
+                        <li><a class="infolink" href="assets/pdf/myResume.pdf" target="_blank">Résumé</a></li>
                     </ul>
                 </aside>
             </div>
@@ -146,7 +141,8 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <script src="assets/js/script.js" async defer></script>
+        <script src="assets/js/tab.js" async defer></script>
+        <script src="assets/js/toggle.js" async defer></script>
     </body>
 
 </html>
