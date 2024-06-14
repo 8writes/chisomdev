@@ -91,8 +91,8 @@ a {
     width: 100%;
   }
   .intro h1 {
-    font-family: 'Comfortaa', cursive;
-    font-size: 8vw;
+    font-family: 'K2D', sans-serif;
+    font-size: 8.5vw;
     cursor: pointer;
   }
   .intro h2 {
@@ -168,7 +168,7 @@ a {
   }
   .projects__content a h2 {
     font-size: 3.1em;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'K2D', sans-serif;
   }
   .projects__content {
     overflow: auto;
@@ -202,7 +202,7 @@ a {
     width: 100%;
   }
   .intro h1 {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'K2D', sans-serif;
     font-size: 2.5em;
     cursor: pointer;
   }
@@ -277,7 +277,7 @@ a {
   }
   .projects__content a h2 {
     font-size: 4em;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'K2D', sans-serif;
   }
   .projects__content a h2:hover {
     text-decoration: line-through;
@@ -302,16 +302,17 @@ a {
 @media (min-width: 992px) {
   html {
     display: block;
-    margin: 0 14vw 0 14vw;
+    margin: 0 13vw 0 13vw;
   }
   nav {
     display: flex;
     justify-content: space-between;
     margin: 5vh 0 5vh 0;
+    align-items: center;
     gap: 50px;
   }
   .intro h1 {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'K2D', sans-serif;
     font-size: 3.5em;
     cursor: pointer;
   }
@@ -375,7 +376,7 @@ a {
   }
   .projects__content a h2 {
     font-size: 4em;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'K2D', sans-serif;
   }
   .projects__content a h2:hover {
     text-decoration: line-through;
