@@ -3,16 +3,69 @@
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+body {
+  color: darkslategrey;
+}
+
 html::-webkit-scrollbar {
   width: 10px;
 }
 html::-webkit-scrollbar-thumb {
   border: solid 2px darkslategrey;
 }
+
+ .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: darkslategrey;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
 a {
   text-decoration: none;
+}
+
+.infolink {
   color: darkslategrey;
 }
+
 .tabcontent {
   display: none;
 }
@@ -38,13 +91,11 @@ a {
   .intro h1 {
     font-family: 'Comfortaa', cursive;
     font-size: 8vw;
-    color: darkslategrey;
     cursor: pointer;
   }
   .intro h2 {
     font-family: 'K2D', sans-serif;
     font-size: 1em;
-    color: darkslategrey;
   }
   .socials {
     display: flex;
@@ -53,7 +104,7 @@ a {
     width: 100%;
   }
   .socials img {
-    width: 30px;
+    width: 40px;
   }
   .socials ul {
     list-style: none;
@@ -77,13 +128,11 @@ a {
   }
   .info h1 {
     font-family: 'Manjari', sans-serif;
-    color: green;
     font-size: 2em;
   }
   .info p {
     font-family: 'Manjari', sans-serif;
-    color: darkslategrey;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 600;
     line-height: 2em;
   }
@@ -114,11 +163,9 @@ a {
   .projects h3 {
     font-family: 'K2D', sans-serif;
     font-size: 1em;
-    color: darkslategrey;
   }
   .projects__content a h2 {
     font-size: 3.1em;
-    color: darkslategrey;
     font-family: 'Comfortaa', cursive;
   }
   .projects__content {
@@ -155,13 +202,11 @@ a {
   .intro h1 {
     font-family: 'Comfortaa', cursive;
     font-size: 2.5em;
-    color: darkslategrey;
     cursor: pointer;
   }
   .intro h2 {
     font-family: 'K2D', sans-serif;
     font-size: 1.4em;
-    color: darkslategrey;
   }
   .socials {
     display: flex;
@@ -194,13 +239,11 @@ a {
   }
   .info h1 {
     font-family: 'Manjari', sans-serif;
-    color: green;
     font-size: 2.5em;
   }
   .info p {
     font-family: 'Manjari', sans-serif;
-    color: darkslategrey;
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: 600;
     line-height: 2em;
   }
@@ -229,11 +272,9 @@ a {
   .projects h3 {
     font-family: 'K2D', sans-serif;
     font-size: 1em;
-    color: darkslategrey;
   }
   .projects__content a h2 {
     font-size: 4em;
-    color: darkslategrey;
     font-family: 'Comfortaa', cursive;
   }
   .projects__content a h2:hover {
@@ -264,19 +305,17 @@ a {
   nav {
     display: flex;
     justify-content: space-between;
-    margin: 5vh 0 10vh 0;
+    margin: 5vh 0 5vh 0;
     gap: 50px;
   }
   .intro h1 {
     font-family: 'Comfortaa', cursive;
     font-size: 3.5em;
-    color: darkslategrey;
     cursor: pointer;
   }
   .intro h2 {
     font-family: 'K2D', sans-serif;
     font-size: 1.2em;
-    color: darkslategrey;
   }
   .socials {
     margin: auto 0 auto 0;
@@ -303,21 +342,18 @@ a {
   }
   .info h1 {
     font-family: 'Manjari', sans-serif;
-    color: green;
     font-size: 2.7em;
   }
   .info p {
     font-family: 'Manjari', sans-serif;
-    color: darkslategrey;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 600;
-    line-height: 1.1em;
+    line-height: 1.7em;
     max-width: 95%;
   }
   .menu ul {
     list-style: none;
     font-family: 'K2D', sans-serif;
-    color: darkslategrey;
     font-size: 1.8em;
   }
   .menu ul li {
@@ -334,11 +370,9 @@ a {
   .projects h3 {
     font-family: 'K2D', sans-serif;
     font-size: 1em;
-    color: darkslategrey;
   }
   .projects__content a h2 {
     font-size: 4em;
-    color: darkslategrey;
     font-family: 'Comfortaa', cursive;
   }
   .projects__content a h2:hover {
