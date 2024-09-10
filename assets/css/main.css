@@ -14,9 +14,33 @@ html::-webkit-scrollbar-thumb {
   border: solid 2px darkslategrey;
 }
 
+.socials-icon {
+  padding: 3px 4px 3px 4px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+
+.socials img {
+  width: 40px;
+}
+
+.socials img:hover {
+  transform: rotate(10deg);
+}
+
 .switch {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   width: 60px;
   height: 34px;
 }
@@ -75,6 +99,11 @@ a {
   html {
     display: block;
   }
+
+  .socials img {
+    width: 35px;
+  }
+
   nav {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -100,24 +129,7 @@ a {
     font-family: 'K2D', sans-serif;
     font-size: 1em;
   }
-  .socials {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-  }
-  .socials img {
-    width: 40px;
-  }
-  .socials ul {
-    list-style: none;
-    display: inline-flex;
-    padding: 0;
-    gap: 20px;
-  }
-  .socials ul li {
-    cursor: pointer;
-  }
+
   /*-------------------------------HEADER END---------------------------------*/
   .content {
     display: flex;
@@ -199,6 +211,7 @@ a {
   .menuinfolink {
     color: white;
   }
+
   .intro {
     display: flex;
     flex-direction: column;
@@ -215,24 +228,7 @@ a {
     font-family: 'K2D', sans-serif;
     font-size: 1.4em;
   }
-  .socials {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-  }
-  .socials img {
-    width: 40px;
-  }
-  .socials ul {
-    list-style: none;
-    display: inline-flex;
-    padding: 0;
-    gap: 20px;
-  }
-  .socials ul li {
-    cursor: pointer;
-  }
+
   /*-------------------------------HEADER END---------------------------------*/
   .content {
     display: flex;
@@ -318,8 +314,8 @@ a {
     gap: 50px;
   }
   .menuinfolink {
-  color: darkslategrey;
-}
+    color: darkslategrey;
+  }
   .intro h1 {
     font-family: 'K2D', sans-serif;
     font-size: 3.5em;
@@ -329,24 +325,7 @@ a {
     font-family: 'K2D', sans-serif;
     font-size: 1.2em;
   }
-  .socials {
-    margin: auto 0 auto 0;
-  }
-  .socials img {
-    width: 40px;
-  }
-  .socials ul {
-    list-style: none;
-    display: inline-flex;
-    padding: 0;
-    gap: 20px;
-  }
-  .socials ul li {
-    cursor: pointer;
-  }
-  .socials ul li:hover {
-    transform: rotate(10deg);
-  }
+
   /*-------------------------------HEADER END---------------------------------*/
   .content {
     display: flex;
