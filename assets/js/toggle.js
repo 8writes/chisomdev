@@ -15,7 +15,7 @@ document.getElementById('toggleSwitch').addEventListener('change', function () {
     })
   } else {
     console.log('Switch is OFF')
-    document.body.style.backgroundColor = '#EBF2F2'
+    document.body.style.backgroundColor = '#FFFFFF'
     document.body.style.color = 'darkslategrey'
     var infoLinks = document.querySelectorAll('.infolink')
     infoLinks.forEach(function (link) {
