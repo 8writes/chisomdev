@@ -115,13 +115,15 @@ a {
   .intro {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
   }
   .intro h1 {
     font-family: 'K2D', sans-serif;
     font-size: 8.5vw;
     cursor: pointer;
+    padding: 1px;
   }
   .intro h2 {
     font-family: 'K2D', sans-serif;
