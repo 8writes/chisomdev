@@ -1,36 +1,52 @@
 /** @format */
 
-* {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
 body {
-  color: darkslategrey;
+  background-color: darkslategrey;
+  font-family: 'Manjari', sans-serif;
+  color: white;
+  max-width: 70%;
+  margin: auto;
 }
 
-html::-webkit-scrollbar {
-  width: 10px;
-}
-html::-webkit-scrollbar-thumb {
-  border: solid 2px darkslategrey;
+main {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
-.socials-icon {
-  padding: 3px 4px 3px 4px;
-  background-color: white;
-  border-radius: 5px;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 50px 0 50px;
+  flex-wrap: wrap-reverse;
+}
+
+.intro h1 {
+  font-size: 5rem;
+  margin: 0px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.intro h2 {
+  font-size: 1.5rem;
+  margin: 0px;
 }
 
 .socials {
   display: flex;
-  align-items: center;
-  justify-content: end;
-  list-style: none;
-  padding: 0;
-  gap: 20px;
+  gap: 10px;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
 }
 
 .socials img {
-  width: 40px;
+  width: 35px;
+  height: auto;
 }
 
 .socials img:hover {
@@ -41,8 +57,8 @@ html::-webkit-scrollbar-thumb {
   position: relative;
   display: flex;
   align-items: center;
-  width: 60px;
-  height: 34px;
+  width: 45px;
+  height: 25px;
 }
 
 .switch input {
@@ -66,8 +82,8 @@ html::-webkit-scrollbar-thumb {
 .slider:before {
   position: absolute;
   content: '';
-  height: 26px;
-  width: 26px;
+  height: 17px;
+  width: 17px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -76,308 +92,211 @@ html::-webkit-scrollbar-thumb {
 }
 
 input:checked + .slider {
-  background-color: darkslategrey;
+  background-color: #909090;
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+  transform: translateX(20px);
 }
+
 a {
   text-decoration: none;
 }
 
 .infolink {
-  color: darkslategrey;
+  color: white;
 }
 
 .tabcontent {
   display: none;
 }
 
+.content {
+  width: 55vw;
+  flex: 1 1 0%;
+  font-size: 1.1rem;
+  line-height: 40px;
+}
+
+.content h1 {
+  font-size: 2rem;
+}
+
+.projects {
+  flex: 1 1 0%;
+  width: 55vw;
+}
+
+.projects_content {
+  display: grid;
+  overflow-y: auto;
+  padding: 20px 0 20px;
+  height: 60vh;
+  gap: 50px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project_image {
+  width: 100%;
+}
+
+.project_container {
+  width: fit-content;
+  padding: 10px;
+  margin-right: 5px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.project_container h2 {
+  font-size: 1.5rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: end;
+  width: 200px;
+  flex-shrink: 1;
+}
+
+.menu ul {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.menu ul li {
+  cursor: pointer;
+  margin-top: 20px;
+}
+
 /* Small screens (up to 767px) */
-@media (max-width: 557px) {
-  html {
-    display: block;
+@media (max-width: 767px) {
+  body {
+    max-width: 100%;
+    padding: 20px 20px;
   }
 
-  .socials img {
-    width: 35px;
+  main {
+    margin-bottom: 50px;
   }
 
-  nav {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-  }
-  .menuinfolink {
-    color: white;
-  }
-  .intro {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
   .intro h1 {
-    font-family: 'K2D', sans-serif;
-    font-size: 8.5vw;
-    cursor: pointer;
-    padding: 1px;
-  }
-  .intro h2 {
-    font-family: 'K2D', sans-serif;
-    font-size: 1em;
+    font-size: 16vw;
+    padding-bottom: 10px;
   }
 
-  /*-------------------------------HEADER END---------------------------------*/
-  .content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 0 70px;
+  .intro h2 {
+    padding-top: 10px;
+    font-size: 6vw;
   }
-  .info {
-    margin: 0 10px 0 10px;
+
+  .nav {
+    padding: 0 0 50px;
   }
-  .info h1 {
-    font-family: 'Manjari', sans-serif;
-    font-size: 2em;
+
+  .socials {
+    margin-left: auto;
   }
-  .info p {
-    font-family: 'Manjari', sans-serif;
-    font-size: 1.2em;
-    font-weight: 600;
-    line-height: 2em;
+
+  .projects {
+    width: 100%;
   }
+
+  .projects_content {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .menu {
+    display: flex;
+    position: fixed;
     background-color: rgba(47, 79, 79, 0.964);
-    border-radius: 20px 0 20px 0;
-    position: fixed;
-    bottom: 10px;
-    left: 20px;
-    right: 20px;
-  }
-  .menu ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    padding: 0;
     justify-content: center;
-    font-family: 'K2D', sans-serif;
-    color: rgb(255, 255, 255);
-    font-size: 1.3em;
-  }
-  .menu ul a {
-    color: rgb(255, 255, 255);
-  }
-  .projects {
-    display: grid;
-    padding-bottom: 30px;
-  }
-  .projects h3 {
-    font-family: 'K2D', sans-serif;
-    font-size: 1em;
-  }
-  .projects__content a h2 {
-    font-size: 3.1em;
-    font-family: 'K2D', sans-serif;
-  }
-  .projects__content {
-    overflow: auto;
-    width: 100%;
-    max-height: 50dvh;
-  }
-  .projects__content::-webkit-scrollbar {
-    width: 12px;
-  }
-  .projects__content::-webkit-scrollbar-thumb {
-    border: solid 2px darkslategrey;
-  }
-  /* CSS styles for small screens go here */
-}
-
-/* Medium screens (768px to 991px) */
-@media (min-width: 557px) and (max-width: 991px) {
-  html {
-    display: block;
-  }
-  nav {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-  }
-  .menuinfolink {
-    color: white;
-  }
-
-  .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-  }
-  .intro h1 {
-    font-family: 'K2D', sans-serif;
-    font-size: 2.5em;
-    cursor: pointer;
-  }
-  .intro h2 {
-    font-family: 'K2D', sans-serif;
-    font-size: 1.4em;
-  }
-
-  /*-------------------------------HEADER END---------------------------------*/
-  .content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 0 70px;
-  }
-  .info {
-    margin: 0 50px 0 50px;
-  }
-  .info h1 {
-    font-family: 'Manjari', sans-serif;
-    font-size: 2.5em;
-  }
-  .info p {
-    font-family: 'Manjari', sans-serif;
-    font-size: 1.3em;
-    font-weight: 600;
-    line-height: 2em;
-  }
-  .menu {
-    background-color: rgba(47, 79, 79, 0.968);
-    border-radius: 20px 0 20px 0;
-    position: fixed;
-    bottom: 10px;
-    left: 50px;
-    right: 50px;
-  }
-  .menu ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    padding: 0;
-    justify-content: center;
-    font-family: 'K2D', sans-serif;
-    color: rgb(255, 255, 255);
-    font-size: 1.4em;
-  }
-  .projects {
-    display: grid;
-    min-width: 80vw;
-    padding-bottom: 30px;
-  }
-  .projects h3 {
-    font-family: 'K2D', sans-serif;
-    font-size: 1em;
-  }
-  .projects__content a h2 {
-    font-size: 4em;
-    font-family: 'K2D', sans-serif;
-  }
-  .projects__content a h2:hover {
-    text-decoration: line-through;
-    cursor: pointer;
-  }
-  .projects__content {
-    overflow: auto;
-    width: 100%;
-    max-height: 50dvh;
-    margin: 10px 0 50px 0;
-  }
-  .projects__content::-webkit-scrollbar {
-    width: 12px;
-  }
-  .projects__content::-webkit-scrollbar-thumb {
-    border: solid 2px darkslategrey;
-  }
-  /* CSS styles for medium screens go here */
-}
-
-/* Large screens (992px and above) */
-@media (min-width: 992px) {
-  html {
-    display: block;
-    margin: 0 13vw 0 13vw;
-  }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 5vh 0 5vh 0;
     align-items: center;
-    gap: 50px;
-  }
-  .menuinfolink {
-    color: darkslategrey;
-  }
-  .intro h1 {
-    font-family: 'K2D', sans-serif;
-    font-size: 3.5em;
-    cursor: pointer;
-  }
-  .intro h2 {
-    font-family: 'K2D', sans-serif;
-    font-size: 1.2em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
   }
 
-  /*-------------------------------HEADER END---------------------------------*/
-  .content {
-    display: flex;
-    justify-content: space-between;
-  }
-  .info h1 {
-    font-family: 'Manjari', sans-serif;
-    font-size: 2.7em;
-  }
-  .info p {
-    font-family: 'Manjari', sans-serif;
-    font-size: 1.3em;
-    font-weight: 600;
-    line-height: 1.7em;
-    max-width: 95%;
-  }
   .menu ul {
-    list-style: none;
-    font-family: 'K2D', sans-serif;
-    font-size: 1.8em;
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    list-style-type: none;
   }
-  .menu ul li {
-    margin: 5px 5px;
-    cursor: pointer;
+
+  .content {
+    width: 100%;
   }
-  .menu ul li:hover {
-    text-decoration: underline;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    max-width: 100%;
+    padding: 20px 20px;
   }
+
+  .intro h1 {
+    font-size: 10vw;
+    padding-bottom: 10px;
+  }
+
+  .intro h2 {
+    padding-top: 10px;
+    font-size: 4vw;
+  }
+
+  .nav {
+    padding: 0 0 50px;
+  }
+
+  .socials {
+    margin-left: auto;
+  }
+
   .projects {
-    display: grid;
-    min-width: 50vw;
+    width: 100%;
   }
-  .projects h3 {
-    font-family: 'K2D', sans-serif;
-    font-size: 1em;
+
+  .content {
+    width: 100%;
   }
-  .projects__content a h2 {
-    font-size: 4em;
-    font-family: 'K2D', sans-serif;
+
+  .menu {
+    display: flex;
+    position: fixed;
+    background-color: rgba(47, 79, 79, 0.964);
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
   }
-  .projects__content a h2:hover {
-    text-decoration: line-through;
-    cursor: pointer;
+
+  .menu ul {
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    list-style-type: none;
   }
-  .projects__content {
-    overflow: auto;
-    max-height: 50dvh;
-    margin: 5px 0 50px 0;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  body {
+    max-width: 100%;
+    padding: 50px 50px;
   }
-  .projects__content::-webkit-scrollbar {
-    width: 12px;
+
+  .projects {
+    width: 70vw;
   }
-  .projects__content::-webkit-scrollbar-thumb {
-    border: solid 2px darkslategrey;
+
+  .content {
+    width: 70vw;
   }
-  /* CSS styles for medium screens go here */
 }

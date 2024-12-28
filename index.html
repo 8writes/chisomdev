@@ -23,135 +23,171 @@
     <body>
 
         <header>
-            <nav>
+            <nav class="nav">
                 <div class="intro">
                     <h1 onclick="toggleTab('tab1')">CHISOM EMMANUEL</h1>
                     <h2>FRONTEND ENGINEER.</h2>
                 </div>
-                    <ul class="socials">
-                        <li><a href="mailto:mailemmanuel00@gmail.com"><img class="socials-icon"
-                                    src="assets/imgs/mail.png" alt="Mail"></a>
-                        </li>
-                        <li><a href="https://github.com/8writes" target="_blank"><img class="socials-icon"
-                                    src="assets/imgs/github.png" alt="Github"></a></li>
-                        <li><a href="https://twitter.com/8mmnuel" target="_blank"><img class="socials-icon"
-                                    src="assets/imgs/twitter.png" alt="Twitter"></a></li>
-                        <label class="switch">
-                            <input type="checkbox" id="toggleSwitch">
-                            <span class="slider"></span>
-                        </label>
-                    </ul>
+                <ul class="socials">
+                    <li><a href="mailto:mailemmanuel00@gmail.com"><img class="socials-icon" src="assets/imgs/mail.svg"
+                                alt="Mail"></a>
+                    </li>
+                    <li><a href="https://github.com/8writes" target="_blank"><img class="socials-icon"
+                                src="assets/imgs/github.svg" alt="Github"></a></li>
+                    <li><a href="https://twitter.com/8mmnuel" target="_blank"><img class="socials-icon"
+                                src="assets/imgs/twitter.svg" alt="Twitter"></a></li>
+                    <!--  <label class="switch">
+                        <input type="checkbox" id="toggleSwitch">
+                        <span class="slider"></span>
+                    </label> -->
+                </ul>
             </nav>
         </header>
 
         <main>
-            <div class="content">
-                <section class="">
-                    <div class="tabcontent" id="tab1" style="display: block;">
-                        <div class="info">
-                            <h1>Hello ^_^</h1>
-                            <p>My name is Chisom, I'm a Frontend Engineer. 
-                            </p>
+            <section class="">
+                <div class="tabcontent" id="tab1" style="display: block;">
+                    <div class="content">
+                        <h1>Hello ^_^</h1>
+                        <p>My name is Chisom, I'm a Frontend Engineer.
+                        </p>
 
-                            <p>I studied MMS Software Engineering at the <span>
-                                    <a class="infolink" style="cursor: pointer; text-decoration: underline;"
-                                        href="https://niitfortesoft.com/" target="_blank">National Institute of Information Technology (NIIT)</a>.
-                                </span></p>
+                        <p>I studied MMS Software Engineering at the <span>
+                                <a class="infolink" style="cursor: pointer; text-decoration: underline;"
+                                    href="https://niitfortesoft.com/" target="_blank">National Institute of
+                                    Information Technology (NIIT)</a>.
+                            </span></p>
 
-                            <p>I build mainly around Javascript.
-                                Some of the
-                                libraries and frameworks I have worked with are React.js, Next.js, Astro.js,
-                                Tailwind Css. All while working with REST APIs and Postgresql Databases.
-                            </p> 
-                            <p>Beyond my technical skills, I continually work on strengthening my communication, code maintainability and teamwork abilities.
-                            </p>
+                        <p>I build mainly around Javascript.
+                            Some of the
+                            libraries and frameworks I have worked with are React.js, Next.js, Astro.js,
+                            Tailwind Css. All while working with REST APIs and Postgresql Databases.
+                        </p>
+                        <p>Beyond my technical skills, I continually work on strengthening my communication, code
+                            maintainability and teamwork abilities.
+                        </p>
 
-                            <p>This is my most recent <a class="infolink"
-                                    style="cursor: pointer; text-decoration: underline;"
-                                    href="https://www.onpointdynamicssynergy.com/" target="_blank">project</a> and feel free
-                                to reach out to <a class="infolink" style="cursor: pointer; text-decoration: underline;"
-                                    href="https://twitter.com/8mmnuel" target="_blank">me</a>.
-                            </p>
-                        </div>
+                        <p>This is my most recent <a class="infolink"
+                                style="cursor: pointer; text-decoration: underline;"
+                                href="https://www.onpointdynamicssynergy.com/" target="_blank">project</a> and feel
+                            free
+                            to reach out to <a class="infolink" style="cursor: pointer; text-decoration: underline;"
+                                href="https://twitter.com/8mmnuel" target="_blank">me</a>.
+                        </p>
                     </div>
+                </div>
 
-                    <div class="tabcontent" id="tab2">
-                        <div class="projects">
-                            <h3>Projects -- (scroll)</h3>
-                            <div class="projects__content">
-                                <div> <a class="infolink" href="https://www.onpointdynamicssynergy.com/"
-                                        target="_blank">
-                                        <h2>ONPOINT DYNAMICS SYNERGY</h2>
-                                        <span class="infolink"
-                                            style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">
-                                            / NEXT.JS / TAILWINDCSS </span>
-                                    </a>
-                                </div>
-                                <div> <a class="infolink" href="https://www.liftcarespecialisthospital.com.ng/"
-                                        target="_blank">
-                                        <h2>LIFTCARE SPECIALIST HOSPITAL</h2>
-                                        <span class="infolink"
-                                            style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">
-                                            / ASTRO.JS / TAILWINDCSS / JAVASCRIPT </span>
-                                    </a>
-                                </div>
-                                <div> <a class="infolink" href="https://fkessentials.craaft.shop/" target="_blank">
-                                        <h2>Ecommerce store</h2>
-                                    </a>
+                <div class="tabcontent" id="tab2">
+                    <div class="projects">
+                        <h3>Projects -- (scroll)</h3>
+                        <div class="projects_content">
+
+                            <a class="infolink" class="project_container" href="https://www.onpointdynamicssynergy.com/"
+                                target="_blank">
+                                <div class="project_container">
+                                    <img src="assets/imgs/onpoint.png" alt="OnPoint Dynamics Synergy"
+                                        class="project_image">
+                                    <h2>ONPOINT DYNAMICS SYNERGY</h2>
                                     <span class="infolink"
-                                        style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">
-                                        /
-                                        NEXT.JS
+                                        style="font-size: 1rem; font-family:monospace; font-weight: 600; color: white;">
+                                        NEXT.JS / TAILWINDCSS </span>
+
+                                </div>
+                            </a> <a class="infolink" class="project_container"
+                                href="https://www.liftcarespecialisthospital.com.ng/" target="_blank">
+                                <div class="project_container">
+                                    <img src="assets/imgs/liftcare.png" alt="Liftcare Hospital"
+                                        class="project_image">
+                                    <h2>LIFTCARE HOSPITAL</h2>
+                                    <span class="infolink"
+                                        style="font-size: 1rem; margin: 0px; font-family:monospace; font-weight: 600; color: white;">
+                                        ASTRO.JS / TAILWINDCSS / JAVASCRIPT </span>
+
+                                </div>
+                            </a> <a class="infolink" class="project_container" href="https://fkessentials.craaft.shop/"
+                                target="_blank">
+                                <div class="project_container">
+                                    <img src="assets/imgs/ecom.png" alt="Ecommerce Store"
+                                        class="project_image">
+                                    <h2>ECOMMERCE STORE</h2>
+
+                                    <span class="infolink"
+                                        style="font-size: 1rem; font-family:monospace; font-weight: 600; color: white;">
+                                        
+                                        NEXT.JS / TAILWINDCSS / REST API
                                     </span>
                                 </div>
-                                <div> <a class="infolink" href="https://craaft.com.ng/" target="_blank">
-                                        <h2>CRAAFT CMS PLATFORM </h2>
-                                        <p>Email: mailemmanuel00@gmail.com <br> Pass: password</p>
-                                        <p>Or you can create your own account :)</p>
-                                        <span class="infolink"
-                                            style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">
-                                            / NEXT.JS
-                                            / TAILWINDCSS / Postgresql </span>
-                                    </a>
-                                </div>
-                                <div> <a class="infolink" href="https://bingpay.vercel.app/" target="_blank">
-                                        <h2>BINGPAY</h2>
-                                    </a>
+                            </a><a class="infolink" class="project_container" href="https://craaft.com.ng/"
+                                target="_blank">
+                                <div class="project_container">
+                                    <img src="assets/imgs/craaft.png" alt="Craaft"
+                                        class="project_image">
+                                    <h2>CRAAFT CMS PLATFORM </h2>
+
                                     <span class="infolink"
-                                        style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">
-                                        / NEXT.JS
+                                        style="font-size: 1rem; font-family:monospace; font-weight: 600; color: white;">
+                                        NEXT.JS
+                                    / POSTGRESQL / NEXT.JS API </span>
+
+                                </div>
+                            </a>
+                            <a class="infolink" class="project_container" href="https://bingpay.vercel.app/"
+                                target="_blank">
+                                <div class="project_container">
+                                    <img src="assets/imgs/bingpay.png" alt="Bingpay"
+                                        class="project_image">
+                                    <h2>BINGPAY</h2>
+
+                                    <span class="infolink"
+                                        style="font-size: 1rem; font-family:monospace; font-weight: 600; color: white;">
+                                        NEXT.JS
                                         / FRAMER MOTION / CSS MODULES </span>
                                 </div>
-                                <div> <a class="infolink" href="https://startease-cli.vercel.app/" target="_blank">
-                                        <h2>STARTEASE CLI</h2>
-                                        <span class="infolink"
-                                            style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">
-                                            / NEXT.JS /
-                                            NEXTUI / TAILWINDCSS </span>
-                                    </a>
+                            </a><a class="infolink" class="project_container" href="https://startease-cli.vercel.app/"
+                                target="_blank">
+                                <div class="project_container">
+                                    <img src="assets/imgs/startease.png" alt="Startease"
+                                        class="project_image">
+                                    <h2>STARTEASE CLI</h2>
+                                    <span class="infolink"
+                                        style="font-size: 1rem; font-family:monospace; font-weight: 600; color: white;">
+                                        NEXT.JS /
+                                        NEXTUI / TAILWINDCSS </span>
+
                                 </div>
-                                <div> <a class="infolink" href="https://formlinx.vercel.app/" target="_blank">
-                                        <h2>FORMLINX</h2>
-                                        <span class="infolink"
-                                            style="font-size: 1.3em; font-family:monospace; font-weight: 600; color: darkslategrey;">
-                                            / NEXT.JS /
-                                            MATERIALUI / TAILWINDCSS </span>
-                                    </a>
+                            </a><a class="infolink" class="project_container" href="https://formlinx.vercel.app/"
+                                target="_blank">
+                                <div class="project_container">
+                                    <img src="assets/imgs/formlinx.png" alt="Formlinx"
+                                        class="project_image">
+                                    <h2>FORMLINX</h2>
+                                    <span class="infolink"
+                                        style="font-size: 1rem; font-family:monospace; font-weight: 600; color: white;">
+                                        NEXT.JS /
+                                        MATERIALUI / TAILWINDCSS </span>
                                 </div>
-                                
-                            </div>
+                            </a>
+                            <a class="infolink" class="project_container" href="https://unsplash-tan.vercel.app/" target="_blank">
+                                <div class="project_container">
+                                    <img src="assets/imgs/unsplash.png" alt="Unsplash" class="project_image">
+                                    <h2>UNSPLASH</h2>
+                            
+                                    <span class="infolink" style="font-size: 1rem; font-family:monospace; font-weight: 600; color: white;">
+                                        NUXT / TYPESCRIPT / REST API</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <aside class="menu">
-                    <ul>
-                        <li class="tab-link" onclick="toggleTab('tab1')">Home</li>
-                        <li class="tab-link" onclick="toggleTab('tab2')">Projects</li>
-                       <!-- <li><a class="menuinfolink" href="assets/pdf/myResume.pdf" target="_blank">Résumé</a></li>-->
-                    </ul>
-                </aside>
-            </div>
+            <aside class="menu">
+                <ul>
+                    <li class="tab-link" onclick="toggleTab('tab1')">Home</li>
+                    <li class="tab-link" onclick="toggleTab('tab2')">Projects</li>
+                    <!-- <li><a class="menuinfolink" href="assets/pdf/myResume.pdf" target="_blank">Résumé</a></li>-->
+                </ul>
+            </aside>
         </main>
 
         <footer>

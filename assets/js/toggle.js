@@ -3,7 +3,7 @@
 document.getElementById('toggleSwitch').addEventListener('change', function () {
   if (this.checked) {
     console.log('Switch is ON')
-    document.body.style.backgroundColor = '#359567'
+    document.body.style.backgroundColor = 'darkslategrey'
     document.body.style.color = '#FFFFFF'
     var infoLinks = document.querySelectorAll('.infolink')
     infoLinks.forEach(function (link) {
