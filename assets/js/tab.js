@@ -1,16 +1,14 @@
 function toggleTab(tabId) {
   var tabcontent = document.getElementsByClassName("tabcontent");
   for (var i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+    tabcontent[i].style.display = "hidden";
   }
 
   var selectedTab = document.getElementById(tabId);
   selectedTab.style.display = "block";
   
-  var tabintro = document.getElementsByClassName("intro");
+  var nav = document.getElementsByClassName("nav");
   if (tabId === 'tab2') {
-    for (var j = 0; j < tabintro.length; j++) {
-      tabintro[j].style.display = "none";
-    }
+      nav.style.display = "hidden";
   }
 }
