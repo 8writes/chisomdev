@@ -6,4 +6,9 @@ function toggleTab(tabId) {
 
       var selectedTab = document.getElementById(tabId);
       selectedTab.style.display = "block";
+      
+      var tabintro = document.getElementsByClassName("intro");
+      if (selectedTab === '2') {
+            tabintro.style.display = "hidden";
+      }
 }
