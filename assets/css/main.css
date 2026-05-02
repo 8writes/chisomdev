@@ -358,6 +358,7 @@ strong { color: var(--text-primary); font-weight: 600; }
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
+  flex-direction: column;
   margin-bottom: 48px;
 }
 
@@ -388,6 +389,8 @@ strong { color: var(--text-primary); font-weight: 600; }
 .btn-ghost {
   border: 1px solid var(--border-hover);
   color: var(--text-secondary);
+  text-align: center;
+  justify-content: center;
 }
 .btn-ghost:hover {
   transform: translateY(-1px);
@@ -397,6 +400,7 @@ strong { color: var(--text-primary); font-weight: 600; }
 .skills-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
 }
 
@@ -519,6 +523,10 @@ strong { color: var(--text-primary); font-weight: 600; }
   display: none;
 }
 
+.mobile-socials {
+  display: none;
+}
+
 /* ===================================================
    HAMBURGER
 =================================================== */
@@ -604,6 +612,7 @@ strong { color: var(--text-primary); font-weight: 600; }
     display: flex;
     gap: 10px;
     margin-top: 12px;
+    justify-content: center;
   }
 
   .tab-panel { padding: 32px 20px; }
