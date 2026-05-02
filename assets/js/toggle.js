@@ -1,5 +1,3 @@
-/** @format */
-
 document.getElementById('toggleSwitch').addEventListener('change', function () {
   if (this.checked) {
     console.log('Switch is ON')
@@ -7,11 +5,11 @@ document.getElementById('toggleSwitch').addEventListener('change', function () {
     document.body.style.color = '#FFFFFF'
     var infoLinks = document.querySelectorAll('.infolink')
     infoLinks.forEach(function (link) {
-      link.style.color = 'white' // Change link color as needed
+      link.style.color = 'white'
     })
     var infoLinks = document.querySelectorAll('.menuinfolink')
     infoLinks.forEach(function (link) {
-      link.style.color = 'white' // Change link color as needed
+      link.style.color = 'white'
     })
   } else {
     console.log('Switch is OFF')
@@ -19,11 +17,11 @@ document.getElementById('toggleSwitch').addEventListener('change', function () {
     document.body.style.color = 'darkslategrey'
     var infoLinks = document.querySelectorAll('.infolink')
     infoLinks.forEach(function (link) {
-      link.style.color = 'darkslategrey' // Change link color as needed
+      link.style.color = 'darkslategrey'
     })
       var infoLinks = document.querySelectorAll('.menuinfolink')
     infoLinks.forEach(function (link) {
-      link.style.color = '' // Change link color as needed
+      link.style.color = ''
     })
   }
 })
