@@ -18,8 +18,8 @@
   --accent-glow:   rgba(124,110,243,0.35);
 
   --text-primary:  #f0f0f8;
-  --text-secondary:#9b9bbb;
-  --text-muted:    #5a5a7a;
+  --text-secondary:#f1f1f1;
+  --text-muted:    #fafafa;
 
   /* Gradients */
   --gradient-hero: linear-gradient(135deg, #7c6ef3 0%, #5eead4 100%);
